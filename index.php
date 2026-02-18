@@ -43,7 +43,7 @@ $workshopImages = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szabó László - Kovácsmester & Designer</title>
+    <title>Szabó László - Kovácsmester</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -82,7 +82,7 @@ $workshopImages = [
                 </div>
                 <div>
                     <h1 class="text-3xl font-black uppercase tracking-tighter leading-none text-[#134e4a]">Szabó László</h1>
-                    <p class="text-[11px] uppercase tracking-[0.25em] font-bold text-[#78350f] mt-1.5 font-serif">Kovácsmester & Designer</p>
+                    <p class="text-[11px] uppercase tracking-[0.25em] font-bold text-[#78350f] mt-1.5 font-serif">Kovácsmester</p>
                 </div>
             </div>
             
@@ -92,7 +92,6 @@ $workshopImages = [
                         <i data-lucide="clock" class="w-3 h-3"></i> 
                         <span id="clock-display">--:--</span>
                     </span>
-                    <span>Sármellék, Zala vm.</span>
                 </div>
                 <div class="hidden sm:flex flex-col items-end">
                     
@@ -191,6 +190,37 @@ $workshopImages = [
             </div>
         </div>
 
+        <!-- CONTACT CARD (4 COL) - UPDATED WITH ONCLICK -->
+        <div 
+            class="md:col-span-12 lg:col-span-12 bg-[#1c1917] rounded-[2rem] p-10 text-white flex flex-col justify-between shadow-2xl relative overflow-hidden group cursor-pointer hover:bg-black transition-colors"
+            onclick="openModal('contact-modal')"
+            id="contact-card"
+        >
+            <div class="relative z-10">
+                <h3 class="text-4xl font-serif italic mb-6 text-[#fdba74]">Indítsunk el valamit.</h3>
+                <p class="text-[#a8a29e] text-sm leading-relaxed mb-8 font-light">
+                    Egyedi kapu, lépcső vagy kézműves tárgy? Keressen Sármelléken, vagy írjon üzenetet.
+                </p>
+            </div>
+            
+            <div class="space-y-5 relative z-10">
+                <div class="flex items-center gap-4 group/item">
+                    <div class="w-12 h-12 bg-[#292524] rounded-2xl flex items-center justify-center group-hover/item:bg-[#ea580c] group-hover/item:text-white transition-all duration-300">
+                        <i data-lucide="phone" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-bold text-sm tracking-wide">+36 20 555 0192</span>
+                </div>
+                <div class="flex items-center gap-4 group/item">
+                    <div class="w-12 h-12 bg-[#292524] rounded-2xl flex items-center justify-center group-hover/item:bg-[#ea580c] group-hover/item:text-white transition-all duration-300">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-bold text-sm tracking-wide">szabo.laszlo@gmail.com</span>
+                </div>
+            </div>
+
+            <i data-lucide="settings" class="absolute -bottom-10 -right-10 w-48 h-48 text-white/5 rotate-12 group-hover:rotate-90 transition-transform duration-1000"></i>
+        </div>
+
         <!-- INFO BOXES -->
         <div class="md:col-span-6 lg:col-span-4 bg-[#ccfbf1] rounded-[2rem] p-8 border border-[#99f6e4] flex items-center gap-6 group hover:bg-[#99f6e4] transition-all">
             <div class="w-16 h-16 bg-[#0f766e] rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform shadow-lg rotate-3 group-hover:rotate-6">
@@ -212,7 +242,7 @@ $workshopImages = [
             </div>
         </div>
 
-        <div class="md:col-span-12 lg:col-span-4 bg-white rounded-[2rem] p-8 flex items-center justify-between group cursor-pointer overflow-hidden relative border border-white hover:border-[#2dd4bf] transition-all shadow-sm hover:shadow-xl">
+        <a href="https://www.facebook.com/profile.php?id=100001912184886" target="_blank" class="md:col-span-12 lg:col-span-4 bg-white rounded-[2rem] p-8 flex items-center justify-between group cursor-pointer overflow-hidden relative border border-white hover:border-[#2dd4bf] transition-all shadow-sm hover:shadow-xl">
             <div class="flex items-center gap-6 relative z-10">
                 <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg">
                     <i data-lucide="facebook" class="w-6 h-6"></i>
@@ -226,7 +256,7 @@ $workshopImages = [
                 <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
             </div>
             <div class="absolute inset-0 bg-gradient-to-r from-blue-50 to-white opacity-0 group-hover:opacity-100 transition-opacity"></div>
-        </div>
+        </a>
     </main>
 
     <!-- FOOTER -->
