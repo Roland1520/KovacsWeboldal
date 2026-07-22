@@ -6,7 +6,7 @@ $current_year = date('Y');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impresszum | Németh Csaba Bence egyéni vállalkozó</title>
+    <title>Impresszum | Szabó László egyéni vállalkozó</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
@@ -34,9 +34,9 @@ $current_year = date('Y');
             <h2>Szolgáltató</h2>
             <p>
                 <strong>Név:</strong> Szabó László E.V.<br>
-                <strong>Székhely:</strong> 8986 Sármellék, Barátság lakótelep 31.<br>
-                <strong>Adószám:</strong> 91901848-1-40<br>
-                <strong>E-mail:</strong> szabo.laszlo@gmail.com<br>
+                <strong>Székhely:</strong> 8986 Sármellék, Barátság lakótelep 31, földszint 1.<br>
+                <strong>Adószám:</strong> 75310411-1-40<br>
+                <strong>E-mail:</strong> spido14@gmail.com <br>
                 <strong>Telefon:</strong> +36 30 586 4514
             </p>
 
@@ -48,7 +48,7 @@ $current_year = date('Y');
 
             <h2>Kapcsolat</h2>
             <p>
-                Bármilyen kérdés esetén az alábbi e-mail címen lehet kapcsolatba lépni: <strong>szabo.laszlo@gmail.com</strong>
+                Bármilyen kérdés esetén az alábbi e-mail címen lehet kapcsolatba lépni: <strong>spido14@gmail.com </strong>
             </p>
 
             <h2>Szerzői jog</h2>

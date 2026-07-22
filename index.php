@@ -7,34 +7,45 @@ $current_year = date("Y");
 $projects = [
     [
         'id' => 1, 
-        'title' => 'Damaszkuszi Örökség', 
-        'cat' => 'Késkészítés', 
-        'img' => 'https://images.unsplash.com/photo-1594142465967-31976ccc3972?auto=format&fit=crop&q=80', 
-        'color' => 'text-emerald-700' // Sötétebb árnyalat a olvashatóságért PHP-ban
+        'title' => 'Kerítéskészítés', 
+        'cat' => 'Kültéri kovácsoltvas', 
+        'img' => '/images/fence4.jpeg', 
+        'color' => 'text-emerald-700'
     ],
     [
         'id' => 2, 
-        'title' => 'Gótikus Kúria Kapu', 
-        'cat' => 'Építészet', 
-        'img' => 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80', 
+        'title' => 'Vas rózsák', 
+        'cat' => 'Dekoráció', 
+        'img' => '/images/rose.jpeg',
         'color' => 'text-orange-700'
     ],
     [
         'id' => 3, 
-        'title' => 'Minimál Kandalló', 
-        'cat' => 'Belsőépítészet', 
-        'img' => 'https://images.unsplash.com/photo-1578301978018-3005759f48f7?auto=format&fit=crop&q=80', 
+        'title' => 'Kovácsolt asztalok', 
+        'cat' => 'Beltéri kovácsoltvas', 
+        'img' => '/images/desk2.jpeg', 
         'color' => 'text-blue-700'
     ]
 ];
 
 // Galéria képek
 $workshopImages = [
-    ['src' => 'https://images.unsplash.com/photo-1549480111-893ec19b2221?auto=format&fit=crop&q=80', 'title' => 'Izzó vas formálása 1200°C-on'],
-    ['src' => 'https://images.unsplash.com/photo-1590159441097-40f09079979c?auto=format&fit=crop&q=80', 'title' => 'Precíziós csiszolás kézzel'],
-    ['src' => 'https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?auto=format&fit=crop&q=80', 'title' => 'Hagyományos tűzhely és üllő'],
-    ['src' => 'https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&q=80', 'title' => 'A sármelléki műhely enteriőrje'],
-    ['src' => 'https://images.unsplash.com/photo-1610214818454-e69888910074?auto=format&fit=crop&q=80', 'title' => 'Részletek kidolgozása kalapáccsal'],
+    ['src' => '/images/fence.jpeg', 'title' => 'Kovácsolt kerítések'],
+    ['src' => '/images/fence1.jpeg', 'title' => ''],
+    ['src' => '/images/fence2.jpeg', 'title' => ''],
+    ['src' => '/images/fence3.jpeg', 'title' => ''],
+    ['src' => '/images/fence4.jpeg', 'title' => ''],
+    ['src' => '/images/rose.jpeg', 'title' => 'Vas rózsák'],
+    ['src' => '/images/rose1.jpeg', 'title' => ''],
+    ['src' => '/images/rose2.jpeg', 'title' => ''],
+    ['src' => '/images/desk.jpeg', 'title' => 'Kovácsolt asztalok'],
+    ['src' => '/images/desk1.jpeg', 'title' => ''],
+    ['src' => '/images/desk2.jpeg', 'title' => ''],
+    ['src' => '/images/swing.jpeg', 'title' => 'Kovácsolt hinta'],
+    ['src' => '/images/swing1.jpeg', 'title' => ''],
+    ['src' => '/images/wine.jpeg', 'title' => 'Rozsdamentes borospohár tartó'],
+    ['src' => '/images/wine1.jpeg', 'title' => ''],
+    ['src' => '/images/woodbracket.jpeg', 'title' => 'Kovácsolt faállvány'],
 ];
 ?>
 
@@ -95,7 +106,7 @@ $workshopImages = [
                     A vasat nem töröm.
                     <span>Megnevelem.</span>
                 </h2>
-                <p>
+                <p style="margin-bottom: 1rem;">
                     Sármelléki műhelyemből indulva modern kovácsolt darabokat készítek, amelyek a funkcionalitást és az esztétikát egyaránt szolgálják.
                 </p>
             </div>
@@ -107,19 +118,11 @@ $workshopImages = [
         </section>
 
         <aside class="status-card">
-            <div class="status-badge">
-                <i data-lucide="layers" class="w-7 h-7"></i>
+            <div class="status-video-wrap" aria-hidden="true">
+                <video class="status-video" autoplay muted loop playsinline preload="auto">
+                    <source src="/images/video.mp4" type="video/mp4">
+                </video>
             </div>
-            <div>
-                <p class="status-label">Mesteri munka</p>
-                <h3>Göllei örökség</h3>
-            </div>
-            <div class="status-bar">
-                <span>Precizitás</span>
-                <span>100%</span>
-            </div>
-            <div class="status-line"><div></div></div>
-            <p class="status-copy">Modern formák, kézműves pontosság és tartós felhasználás minden projektben.</p>
         </aside>
 
         <section id="projects" class="projects-section">
@@ -157,10 +160,10 @@ $workshopImages = [
                 <img src="<?php echo $workshopImages[0]['src']; ?>" alt="">
             </div>
             <div class="gallery-preview-image">
-                <img src="<?php echo $workshopImages[1]['src']; ?>" alt="">
+                <img src="<?php echo $workshopImages[5]['src']; ?>" alt="">
             </div>
             <div class="gallery-preview-image">
-                <img src="<?php echo $workshopImages[2]['src']; ?>" alt="">
+                <img src="<?php echo $workshopImages[10]['src']; ?>" alt="">
             </div>
             <div class="gallery-preview-copy">
                 <p class="section-kicker">Műhelytitkok</p>
@@ -173,7 +176,7 @@ $workshopImages = [
             <div class="contact-copy">
                 <p class="section-kicker">Kapcsolat</p>
                 <h3>Indítsunk el valamit.</h3>
-                <p>
+                <p style="margin-bottom: 1rem;">
                     Egyedi kapu, lépcső, kandalló vagy kovácsolt dekoráció? Írjon vagy hívjon, és egyeztetünk a legjobb megoldásról.
                 </p>
 
@@ -184,11 +187,11 @@ $workshopImages = [
                     </div>
                     <div class="contact-item">
                         <span class="contact-icon"><i data-lucide="mail" class="w-5 h-5"></i></span>
-                        <span>szabo.laszlo@gmail.com</span>
+                        <span>spido14@gmail.com</span>
                     </div>
                     <div class="contact-item">
                         <span class="contact-icon"><i data-lucide="map-pin" class="w-5 h-5"></i></span>
-                        <span>Sármellék, Barátság lakótelep 31.</span>
+                        <span>Sármellék, Barátság lakótelep 31, földszint 1.</span>
                     </div>
                 </div>
             </div>
@@ -242,7 +245,6 @@ $workshopImages = [
                     Minden darab egyedi, hosszú élettartammal és esztétikus megjelenéssel készül, így a munkák nem csupán funkcionálisak, hanem örökségként is értékesek maradnak.
                 </p>
                 <div class="info-grid">
-                    <div class="info-card"><i data-lucide="shield" class="w-4 h-4"></i><span>Mestervizsgával igazolt</span></div>
                     <div class="info-card"><i data-lucide="award" class="w-4 h-4"></i><span>Garancia a munkára</span></div>
                     <div class="info-card"><i data-lucide="map-pin" class="w-4 h-4"></i><span>Helyi vállalkozás</span></div>
                     <div class="info-card"><i data-lucide="flame" class="w-4 h-4"></i><span>Hagyományos technológia</span></div>

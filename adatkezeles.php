@@ -33,10 +33,10 @@ $current_year = date('Y');
             <p class="section-kicker">Adatkezelés</p>
             <h2>1. Az adatkezelő</h2>
             <p>
-                <strong>Név:</strong> Szabó László egyéni vállalkozó<br>
-                <strong>Székhely:</strong> 8986 Sármellék Barátság lakótelep 31.<br>
-                <strong>Adószám:</strong> 91901848-1-40<br>
-                <strong>E-mail:</strong> szabo.laszlo@gmail.com<br>
+                <strong>Név:</strong> Szabó László E.V.<br>
+                <strong>Székhely:</strong> 8986 Sármellék, Barátság lakótelep 31, földszint 1.<br>
+                <strong>Adószám:</strong> 75310411-1-40<br>
+                <strong>E-mail:</strong> spido14@gmail.com<br>
                 <strong>Telefon:</strong> +36 30 586 4514
             </p>
 
@@ -85,7 +85,7 @@ $current_year = date('Y');
 
             <h2>8. Kapcsolat</h2>
             <p>
-                Adatkezeléssel kapcsolatos kérdés esetén írjon az <strong>szabo.laszlo@gmail.com</strong> címre.
+                Adatkezeléssel kapcsolatos kérdés esetén írjon az <strong>spido14@gmail.com </strong> címre.
             </p>
 
             <h2>9. Hatósági jogorvoslat</h2>
